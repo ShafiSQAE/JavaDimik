@@ -14,7 +14,7 @@ public class D4Divisor {
             int n = scanner.nextInt();
             List<Integer> divisors = new ArrayList<>();
 
-            for (int i = 1; i * i <= n; i++) {
+            for (int i = 1; i <= Math.sqrt(n); i++) {
                 if (n % i == 0) {
                     divisors.add(i);
                     if (i != n / i) {
