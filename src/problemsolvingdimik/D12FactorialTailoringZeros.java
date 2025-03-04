@@ -14,9 +14,9 @@ public class D12FactorialTailoringZeros {
 
             int n = scanner.nextInt();
             int count = 0;
-            for (int i = 5; i <= n; i++) {
-                count = count + n / 5;
-                n = n / 5;
+            for (int i = 5; i <= n; i=i*5) {
+                count = count + n / i;
+
             }
 
             System.out.printf("%d\n",count);
