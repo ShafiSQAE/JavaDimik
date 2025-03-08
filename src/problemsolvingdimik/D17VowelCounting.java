@@ -18,7 +18,7 @@ public class D17VowelCounting {
             int count=0;
             for(char ch : chars)
             {
-                if("aeiouAEIOU".indexOf(ch) != -1)
+                if("aeiou".indexOf(Character.toLowerCase(ch)) != -1)
                 {
                     count++;
                 }
