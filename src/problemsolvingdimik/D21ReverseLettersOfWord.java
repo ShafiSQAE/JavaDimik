@@ -2,7 +2,7 @@ package problemsolvingdimik;
 
 import java.util.Scanner;
 
-public class D20ReverseLettersOfWord {
+public class D21ReverseLettersOfWord {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
