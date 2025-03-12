@@ -10,7 +10,7 @@ public class D26AlienGupi {
         int t=scanner.nextInt();
         for(int test=0; test<t; test++)
         {
-            double x=scanner.nextDouble();
+            float x=scanner.nextFloat();
             int count=0;
             while(x>=1)
             {
