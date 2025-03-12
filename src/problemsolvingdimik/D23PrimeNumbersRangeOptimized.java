@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class D23PrimeNumbersRangeOptimized {
 
-    static final int MAX=1000000;
+    static final int MAX=1_00_000;
     static boolean[] isPrime= new boolean[MAX+1];
     static int[] primeCount= new int[MAX+1];
 
@@ -20,13 +20,12 @@ public class D23PrimeNumbersRangeOptimized {
             int b=scanner.nextInt();
 
 
-            if (a > b) {
-                int temp = a;
-                a = b;
-                b = temp;
+            if (a<=b) {
+                System.out.println(primeCountRang(a, b));
             }
-
-            System.out.println(primeCountRang(a,b));
+            else {
+                System.out.println(0);
+            }
         }
     }
 
@@ -36,6 +35,7 @@ public class D23PrimeNumbersRangeOptimized {
             isPrime[i]=true;
         }
         isPrime[0]=isPrime[1]=false;
+
         for(int i=2; i*i<=MAX; i++)
         {
             if(isPrime[i])
