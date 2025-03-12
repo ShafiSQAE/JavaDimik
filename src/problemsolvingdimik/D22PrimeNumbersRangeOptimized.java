@@ -2,7 +2,7 @@ package problemsolvingdimik;
 
 import java.util.Scanner;
 
-public class D23PrimeNumbersRangeOptimized {
+public class D22PrimeNumbersRangeOptimized {
 
     static final int MAX=1_00_000;
     static boolean[] isPrime= new boolean[MAX+1];
