@@ -7,6 +7,7 @@ public class D37NumberBiporjoy {
         Scanner scanner = new Scanner(System.in);
 
         int t = scanner.nextInt();
+        scanner.nextLine();
         for (int test = 0; test < t; test++) {
             int n = scanner.nextInt();
             int reversed = 0;
