@@ -13,14 +13,14 @@ public class D34Bivajjo2 {
             int a=scanner.nextInt();
             int b=scanner.nextInt();
             long c=scanner.nextLong();
-            long start= (long) a*b;
+            long LCM= lcm(a,b);
 
-            if(start>c){
+            if(LCM>c){
                 continue;
             }
 
 
-            for(long i=start; i<=c; i+=start){
+            for(long i=LCM; i<=c; i+=LCM){
                 result.append(i).append("\n");
             }
 
@@ -29,5 +29,26 @@ public class D34Bivajjo2 {
             }
         }
         System.out.print(result);
+    }
+
+    private static long lcm(int a, int b) {
+        if(a==0 || b==0) return 0;
+        return ((long)a*b)/gcd(a,b);
+    }
+
+    private static long gcd(int a, int b) {
+        if(a<b){
+            int temp=a;
+            a=b;
+            b=temp;
+        }
+
+        while(b!=0){
+            int rem=a%b;
+            a=b;
+            b=rem;
+        }
+
+        return a;
     }
 }
