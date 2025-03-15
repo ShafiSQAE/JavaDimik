@@ -2,7 +2,7 @@ package problemsolvingdimik;
 
 import java.util.Scanner;
 
-public class D43SumOfSeries3WithStringBuilder {
+public class D42SumOfSeries3WithStringBuilder {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         int t=scanner.nextInt();
