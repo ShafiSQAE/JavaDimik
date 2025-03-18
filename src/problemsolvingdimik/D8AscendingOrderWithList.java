@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class D8AscendingOrder {
+public class D8AscendingOrderWithList {
 
     public static void main(String[] args) {
 
@@ -20,8 +20,8 @@ public class D8AscendingOrder {
             for (int i = 0; i < 3; i++) {
                 numbers.add(scanner.nextInt());
 
-                Collections.sort(numbers);
             }
+            Collections.sort(numbers);
 
             System.out.print("Case " + test + ": ");
             for (int j = 0; j < numbers.size(); j++) {
