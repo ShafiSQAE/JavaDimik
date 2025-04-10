@@ -2,9 +2,8 @@ package njm.task;
 
 import java.util.Scanner;
 
-public class Palindrome {
+public class N4ReverseString {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
@@ -13,21 +12,16 @@ public class Palindrome {
         int left = 0;
         int right = inputArray.length - 1;
 
-        while(left<right){
-            char temp=inputArray[left];
-            inputArray[left]=inputArray[right];
+        while (left < right) {
+            char temp = inputArray[left];
+            inputArray[left] =inputArray[right];
             inputArray[right]=temp;
             left++;
             right--;
         }
 
-        String reversed= new String(inputArray);
+        String rev= new String(inputArray);
 
-        if(input.equalsIgnoreCase(reversed)){
-            System.out.println("Palindrome");
-        }
-        else{
-            System.out.println("Not Palindrome");
-        }
+        System.out.println("Reversed string is: "+rev);
     }
 }
