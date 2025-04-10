@@ -35,6 +35,7 @@ public class MergeTwoArray {
                 k++;
             }
 
+
             Arrays.sort(mergedArr);
 
             for (int l = 0; l < mergedArr.length; l++) {
