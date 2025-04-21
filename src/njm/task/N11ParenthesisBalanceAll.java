@@ -4,27 +4,23 @@ import java.util.Scanner;
 
 public class N11ParenthesisBalanceAll {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine().replaceAll("[^(){}\\[\\]]","");
 
-        Scanner scanner=new Scanner(System.in);
+        // Remove all characters except (), {}, []
+        //input = input.replaceAll("[^(){}\\[\\]]", "");
 
-        String input= scanner.nextLine();
+        String prev;
+        do {
+            prev = input;
+            input = input.replace("()", "")
+                    .replace("{}", "")
+                    .replace("[]", "");
+        } while (!input.equals(prev));
 
-        char[] inputArr= input.toCharArray();
-        int balance=0;
-
-        for(char ch : inputArr){
-            if(ch== '('){
-                balance++;
-            }
-            else if(ch==')'){
-                balance--;
-            }
-        }
-
-        if(balance==0){
+        if (input.isEmpty()) {
             System.out.println("Balanced");
-        }
-        else{
+        } else {
             System.out.println("Not Balanced");
         }
     }

@@ -25,9 +25,9 @@ public class N6FindingMissingNumberUsingIndex {
         for(int i=0; i<n-1; i++){
             if(arr[i]!=i+1){
                 missing=i+1;
+                break;
             }
         }
-
         System.out.print("This missing number is: "+missing);
     }
 }

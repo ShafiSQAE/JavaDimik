@@ -9,6 +9,16 @@ public class GCD {
         long a = scanner.nextLong();
         long b = scanner.nextLong();
 
+
+        /* a= 60 , b= 36  a%b
+           60  %   36  =   24
+           36  %   24  =   12
+           24  %   12  =   0
+           12   %   0  =
+
+           GCD     12  (When b==0 then a is GCD)
+         */
+
         if (a < b) {
             long temp = a;
             a = b;
